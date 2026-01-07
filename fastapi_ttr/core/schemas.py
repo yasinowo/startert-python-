@@ -22,3 +22,6 @@ class PersonUpdateSchema(BaseModel):
 class PersonResponseSchema(BasePersonSchema):
     id: int
     email: EmailStr
+
+    class Config:
+        from_attributes = True
