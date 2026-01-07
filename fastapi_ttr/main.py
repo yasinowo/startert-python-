@@ -5,7 +5,7 @@ import fastapi_swagger_dark as fsd
 from core.schemas import *
 
 # ===== App & Router =====
-app = FastAPI(docs_url=None)
+app = FastAPI(docs_url=None, title="Person API", version="1.0.0")
 router = APIRouter()
 
 # ===== In-memory DB =====
